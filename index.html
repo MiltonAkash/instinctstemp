@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Instincts 13.0</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+    <!--<link rel="stylesheet" href="gallerydist/css/lightgallery.min.css/">-->
+    <!--<script src="gallerydist/js/lightgallery.js"></script>-->
+
   </head>
+
   <style>
     body{
       margin:0px;
       padding:0px;
       height:100vh;
       width:100vw;
-      background:url(instincts%20SUC-01.jpg);
+      background:url('instincts SUC-01.jpg');
       background-size: cover;
       background-position: bottom;
     }
@@ -31,6 +36,19 @@
     
   </style>
   <body>
-<!--    <img src="instincts%20SUC-01.jpg"/>-->
+
+  <div class="galleria" style="height:300px">
+    <img src="img/1-375.jpg">
+    <img src="img/1-480.jpg">
+    <img src="img/13-1600.jpg">
+    <!--<img src="photo2.jpg">-->
+    <!--<img src="photo3.jpg">-->
+  </div>
   </body>
+  <script>
+      (function() {
+          Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+          Galleria.run('.galleria');
+      }());
+  </script>
 </html>
